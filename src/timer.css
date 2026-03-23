@@ -1,0 +1,102 @@
+/* Container Background (Simulating the mountain backdrop) */
+body {
+    background: url('./assets/Mountain.jpg') no-repeat center center fixed; /* Use relative path */
+    background-size: cover;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; /* Prevents scrollbars if cards are near edges */
+}
+.focus-card {
+  /* Positioning */
+  position: fixed;
+  top: 50px;    /* Same distance from top as the To-Do */
+  left: 50px;   /* Put it on the left */
+  
+  /* Styling (Keep your existing glassmorphism) */
+  background: rgba(30, 30, 30, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 18px;
+  width: 280px; 
+  margin-left: 50px;
+  margin-top: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  z-index: 10; /* Ensures it stays above the background */
+}
+
+/* Header with Title and X */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.card-title {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.6);
+  
+    display: block; 
+    width: 100%;   
+    text-align: center;
+
+}
+
+
+
+
+.timer-display {
+  font-size: 42px;
+  font-weight: 700;
+  text-align: center;
+  margin: 10px 0 20px 0;
+  font-variant-numeric: tabular-nums;
+}
+
+
+.timer-controls {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr; /* Start button is wider */
+  gap: 10px;
+}
+
+
+.btn-main, .btn-secondary {
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+/* Start Button (Neon Green) */
+.btn-main.start {
+  background: #00d285; /* Vibrant green from ss */
+  color: #000;
+}
+
+/* Stop Button (Soft Red) */
+.btn-main.stop {
+  background: #ff4d4d;
+  color: white;
+}
+
+/* Reset Button (Darker Glass) */
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.btn-main:hover, .btn-secondary:hover {
+  opacity: 0.8;
+}

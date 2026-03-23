@@ -1,0 +1,41 @@
+.clock-container {
+    /* Position it at the bottom center */
+    position: fixed;
+    bottom: 15%; /* Moves it up slightly from the very bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Perfectly centers it horizontally */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    z-index: 5; /* Keeps it behind the side cards if they overlap */
+}
+
+/* The Time (HH:MM AM/PM) */
+.clock-time {
+    font-size: 100px; /* Large ZenFlow style */
+    font-weight: 700;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+/* The Date (Sunday, February 15) */
+.clock-date {
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 4px; /* Matches the 'Sunday, February 15' spacing in your image */
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7); /* Slightly muted */
+    margin-top: 10px;
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    .clock-time { font-size: 80px; }
+    .clock-date { font-size: 18px; }
+}

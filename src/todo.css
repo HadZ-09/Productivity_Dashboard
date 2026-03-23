@@ -1,0 +1,255 @@
+.TODO{
+    text-align: center;
+    justify-self: right;
+    padding: 0px;
+    border-radius: 20px;
+    margin: 2px;
+    height: 400px;
+    width: 600px;
+
+
+
+    
+
+    
+}
+.ToDo{
+    color: rgb(152, 138, 165);
+
+}
+
+li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 750px;
+    max-height: 200px;
+
+
+
+
+    text-decoration: none;
+    font-size: 20px;
+    background-color: aqua;
+    margin: 2px;
+    border-color: white;
+    list-style-type: none;
+
+
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    margin-bottom: 8px;
+    background: rgba(255, 255, 255, 0.05); 
+    transition: background 0.3s ease;
+    list-style: none;
+   
+
+  
+
+}
+li:hover {
+  background: rgba(255, 255, 255, 0.1); /* Brightens on hover */
+}
+ul{
+    text-decoration: none;
+    margin: white solid 1 px;
+     background: rgba(28, 28, 28, 0.75);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
+  color: white;
+   
+}
+
+
+.checkbox{
+    float: left;
+    text-align: center;
+    height:15px;
+    width: 15px;
+    cursor: pointer;
+    
+}
+
+.input{
+    height: 50px;
+    width: 80%;
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 12px;
+  color: white;
+  margin-bottom: 9px;
+  outline: none;
+}
+.input::placeholder {
+  color: rgba(234, 222, 222, 0.82);
+  font-size: 15px;
+}
+
+.inputButton{
+    height: 48px;
+    width: 20%;
+    background: #00c985; 
+  color: #1c1c1c;      
+  border: none;
+  border-radius: 12px;
+  text-align: center;
+ 
+  padding: 12px 14px;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  
+  
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 201, 133, 0.3);
+}
+
+.inputButton:hover {
+  background: #00e094; 
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 20px rgba(0, 201, 133, 0.4);
+}
+.inputButton:active {
+  transform: translateY(0);
+}
+
+
+.delete {
+
+    
+  background: rgba(220, 53, 69, 0.2); 
+  color: #ff4d4d;
+  border: 1px solid rgba(220, 53, 69, 0.3);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.delete:hover {
+  background: #dc3545; 
+  color: white;
+  box-shadow: 0 0 15px rgba(220, 53, 69, 0.4);
+}
+
+
+.arrow-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.7);
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-left: 4px;
+  transition: 0.2s;
+}
+.arrow-btn:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+
+.arrow-btn img, .arrow-btn span {
+  font-size: 14px;
+}
+
+
+.checkbox:checked ~ .todo-text {
+  text-decoration: line-through;
+  text-decoration-color: #6d706eb7;
+  color: rgba(165, 139, 139, 0.3);
+  transition: all 0.3s ease;
+}
+
+
+.todo-text {
+  margin: 0 10px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.empty-message {
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+  margin-top: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.TODO {
+    
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    width: 400px; 
+    height: 480px;
+    
+
+    background: rgba(28, 28, 28, 0.7);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+    
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+}
+
+
+
+
+
+/* this is for user */
+.user{
+  /* text-align: center;
+  justify-content: center;
+   */
+   position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+  
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px; /* The secret to the "stylish" look */
+    color: rgba(255, 255, 255, 0.7); /* Muted white */
+    
+    
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    pointer-events: none; /* Keeps it from interfering with clicks */
+    z-index: 10
+}
