@@ -5,7 +5,7 @@ ZenFlow is a modern, lightweight productivity suite designed to help developers 
 ## 🚀 Features
 
 * **Real-time Digital Clock:** Keeps you synchronized with your local time.
-* **Pomodoro Timer:** Integrated focus sessions to boost deep work productivity.
+* **Stop Watch Timer:** Integrated focus sessions to keep track of time and boost deep work productivity.
 * **Persistent To-Do List:** Full **CRUD** (Create, Read, Update, Delete) functionality.
 * **Local Storage:** Your tasks stay saved in your browser even after a refresh.
 
